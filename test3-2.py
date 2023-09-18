@@ -181,11 +181,11 @@ while i <= 100:
         print("홀수 : ", i)
     i += 1 """
     
-# while 7의 배수만 출력
+""" # while 7의 배수만 출력
 i = 1
 
 while i <=100:
     if i % 7 == 0:
         print(i)
     i += 1
-    
+     """
