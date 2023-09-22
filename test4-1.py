@@ -207,7 +207,7 @@ def sum_num(num):
 nums = []
 
 for i in range(1,6) :
-    innum = int(input(f"{i} 번째 숫자 입력 : "))
+    innum = int(input(f"{i}번째 숫자 입력 : "))
     nums.append(innum)
     
 print(sum_num(nums))
