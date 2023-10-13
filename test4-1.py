@@ -1,9 +1,9 @@
-# input
+#input
 """ num = input("숫자를 입력하세요!!")
-print("number", int(num)) """
-
+print("number", int(num))
+ """
 #type
-""" a = 12
+"""a = 12
 print(type(a))
 
 a = 12.01
@@ -20,23 +20,23 @@ print(type(a))
  """
  
 #형변환
-# a = 65
-#a = "65"
-#print(int(a))
-#print(str(a))
-#print(hex(a))
-#print(oct(a))
-#print(chr(a))
+#a = 65
+#a = "a"
+"""print(int(a))
+print(str(a))
+print(hex(a))
+print(oct(a))
+print(chr(a))"""
 #print(ord(a))
 
 """ print(pow(2,2))
 print(pow(2,6))
 print(pow(3,4))
 print(3 ** 4)
- """
-#print(divmod(10,3))
 
-#print(round(3.14))
+print(divmod(10,3))
+
+print(round(3.14)) """
 
 """ a = (3,5,7)
 b = list(a)
@@ -51,7 +51,6 @@ print(type(c))
  """
 
 #range
-
 """ for i in range(2,7) :
     print(i)
 
@@ -59,7 +58,7 @@ for i in range(6):
     print(i)
 
 for i in range(1, 20, 3):
-    print(i) """
+    print(i)  """
     
 # max, min, sum
 
@@ -68,11 +67,10 @@ print(max(a))
 print(min(a))
 print(sum(a))
  """
-# abs
+#abs
 """ print(abs(-3))
 print(abs(3.0))
-print(abs(-3.0))
- """
+print(abs(-3.0)) """
 
 #sorted
 """ a = [5, 3, 1, 9,4]
@@ -82,10 +80,9 @@ print(sorted(a, reverse=True)) """
 #enumerate
 """ a = [5, 3.14, False, 9, "string"]
 print(enumerate(a))
-print(*enumerate(a))
- """
- 
- #zip
+print(*enumerate(a)) """
+
+#zip
 """ a = [1,2,3]
 b = [4,5,6]
 print(zip(a,b))
@@ -105,16 +102,16 @@ c = "a 는 {}, b 는 {}".format(a,b, "python")
 
 print(c) """
 
-""" a = 3
-#(globals())
+#a = 3
+#print(globals())
 #print(locals())
 
 #print(dir(a)) 
 
-print(callable(a)) """
+#print(callable(a))
 
 #lambda
-""" add = lambda a,b : a + b
+"""add = lambda a,b : a + b
 print(add(2,3))
 
 sub = lambda a,b : a - b
@@ -124,16 +121,16 @@ mul = lambda a,b : a * b
 print(mul(2,3))
 
 div = lambda a,b : a / b
-print(div(2,3)) """
-
+print(div(2,3))
+ """
 """ #함수 호출
 result =add_numbers(4,5)
 print(result)
 
 def greet(name):
     print(name)
-    print("hello," + name + ", how are you?")
-     """
+    print("hello," + name + ", how are you?") """
+     
 
 # 사용자 정의
 """ def add_numbers(a, b) : 
@@ -141,6 +138,7 @@ def greet(name):
 result = add_numbers(4,5)
 print(result)  """
 
+#매개변수, 인자
 """ def add(a,b) :
     print(a+b)
 def sub(a,b) :
@@ -153,10 +151,10 @@ def div() :
 add(3,5)
 print(sub(3,5))
 print(mul())
-div()
- """
+div() """
+
  
- #입력값 짝수/홀수 판별 
+#입력값 짝수/홀수 판별 
 """ def is_even(n) : 
     if n % 2 ==0 :
         print("짝수")
@@ -164,16 +162,15 @@ div()
         print("홀수")
         
 num = input("숫자를 입력하세요")
-
-is_even(int(num)) """
+is_even(int(num))  """
        
  #문자열을 입력받아 반대로 출력
 """ def reverse_string(msg):
     return msg[::-1]
 
 in_str = input("문자열 : ")
-print(reverse_string(in_str)) """
- 
+print(reverse_string(in_str)) 
+  """
  #두 수를 입력 받아 사칙연산 결과출력
 """ def add(a,b) :
      return int(a) + int(b)
@@ -200,7 +197,7 @@ def calc(a,b):
     print(int(a) * int(b))
     print(int(a) / int(b)) """
  
- #5개의 숫자를 입력받아 총합 출력
+#5개의 숫자를 입력받아 총합 출력
 def sum_num(num):
     return sum(num)
 

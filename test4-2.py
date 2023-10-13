@@ -1,23 +1,23 @@
 #콜백함수
-""" def prt_func() :
+def prt_func() :
     print("hello")
 
 def callfunc(fx) :
 		fx()
 
-callfunc(prt_func) """
+callfunc(prt_func) 
 
-""" def prt_func (n) :
+def prt_func (n) :
     print("hello",n)
     
 def callfunc(fx) :
     for i in range(5) :
       fx(i)
 
-callfunc(prt_func) """
+callfunc(prt_func)
 
 #타입힌트 - 콜백함수
-""" def update_msg(name: str) -> list :
+"""def update_msg(name: str) -> list :
     msg = []
     msg.append("Hello," + name)
     msg.append("Bye, " +name )
@@ -239,7 +239,7 @@ print(os.listdir())
 os.mkdir('new_directiry')
 print(os.listdir())
  """
-import mod.utils as mu
+""" import mod.utils as mu
 import os
 
 print(mu.get_curdir())
@@ -249,7 +249,7 @@ mu.os_mkdir(pname)
 print(os.listdir())
 
 os.rmdir(pname)
-print(os.listdir()) 
+print(os.listdir())  """
 
 """ import sys
 
