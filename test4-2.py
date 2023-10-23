@@ -1,10 +1,10 @@
 #콜백함수
-def prt_func() :
+""" def prt_func() :
     print("hello")
 
 def callfunc(fx) :
-		fx()
-
+    fx()
+		
 callfunc(prt_func) 
 
 def prt_func (n) :
@@ -14,10 +14,10 @@ def callfunc(fx) :
     for i in range(5) :
       fx(i)
 
-callfunc(prt_func)
-
+callfunc(prt_func) """
+ 
 #타입힌트 - 콜백함수
-"""def update_msg(name: str) -> list :
+""" def update_msg(name: str) -> list :
     msg = []
     msg.append("Hello," + name)
     msg.append("Bye, " +name )
@@ -31,8 +31,8 @@ def greeting(in_name: str) -> list:
 res = greeting("python")
 
 for message in res:
-    print(message) """
-    
+    print(message)
+     """
 #재귀함수
 """ def fun(n) :
     if n == 5 :
@@ -40,12 +40,11 @@ for message in res:
     
     print(1,n)
     fun(n+1)
-    #print(2,n)
-
-fun(1)
+#print(2,n)
+fun(1) """
 
 #fibonacci
-def ploop(n) :
+""" def ploop(n) :
     if n  == 0:
        print("end")
        return 1
@@ -53,9 +52,9 @@ def ploop(n) :
        print(n, n-1, " = ", n + n-1 )
        return n * ploop(n-1)
    
-print(ploop(5))
+print(ploop(5)) """
 
-def fibonacci(n) :
+""" def fibonacci(n) :
     if n == 0:
       return 1
     elif n == 1:
@@ -65,8 +64,7 @@ def fibonacci(n) :
         return fibonacci(n-1) + fibonacci(n-2)
     
 res = fibonacci(4)
-print("res = ",res)
-    """
+print("res = ",res)  """
     
  # calc 모듈 호출
 """ import calc
@@ -75,27 +73,25 @@ print("res = ",res)
 print(calc.add(8,4))
 print(calc.sub(8,4))
 print(calc.mul(8,4))
-print(calc.div(8,4))
+print(calc.div(8,4)) 
  """
-
 """ import calc as cl
 # res = calc.add(8,4)
 # print(res)
 print(cl.add(8,4))
 print(cl.sub(8,4))
 print(cl.mul(8,4))
-print(cl.div(8,4)) """
+print(cl.div(8,4))"""
 
-""" # circle mod
-import mod.circle_mod as cm
+# circle mod
+""" import mod.circle_mod as cm
 
 print(cm.pi)
-
 print(cm.cc_area(4))
-print(cm.cc_len(5))
+print(cm.cc_len(5))  """
 
 #문자열 자르기 
-def cutstr(st, wd, idx) :
+""" def cutstr(st, wd, idx) :
     tmp = st.split(wd)
     res = tmp[idx]
     return res
@@ -104,18 +100,18 @@ import mod.str_util as smod
 
 url = "https://www.notion.so/test/4-1/a1fe5ef0df1/41f7a1aa9ec01/3a859a"
 rs = cutstr(url, "/", 3)
-print(rs)
+print(rs)  """
 
 #문자유틸모듈화
 
-import mod.str_utill as smod
+"""import mod.str_utill as smod
 
 url = "https://www.notion.so/test/4-1/a1fe5ef0df1/41f7a1aa9ec01/3a859a"
 res = smod.cutword(url, "/", 3)
-print(res)
+print(res)"""
 
 #math 모듈 사용
-import math
+""" import math
 
 sq_res = math.sqrt(6)
 print(sq_res)
@@ -127,15 +123,15 @@ e_res = math.log(math.e)
 print(e_res)
 
 exe_res = math.exp(3)
-print(exp_res)
+print(exe_res)
 
 pi_res = math.pi
 print(pi_res)
 
 fc_res = math.factorial(4)
-print(fc_res)
+print(fc_res) """
 
-import mod.utils as mu
+""" import mod.utils as mu
 
 res = mu.mt_sqrt(7)
 print(res)
@@ -151,10 +147,10 @@ print(ep)
 
 pi = mu.mt_pi()
 print(pi)
- """
+  """
 
 #random 
-""" import random as rd
+import random as rd
 
 res = rd.randint(1,100)
 print(res)
@@ -176,7 +172,7 @@ my_list = ['apple','banana','cherry']
 print(mu.rd_int(1,100))
 print(mu.rd_list(my_list))
 print(mu.rd_rd())
-print(mu.rd_nmvar()) """
+print(mu.rd_nmvar())
 
 """ #datertime
 from datetime import daterime as dt
@@ -198,7 +194,7 @@ print(date_object)
 #날짜를 문자열로 변환
 date_object = dt.now()
 date_string = date_object.string('%Y-%m-%d')
-print(date_string) """
+print(date_string)  """
 
 """ import mod.utils as mu
 
@@ -239,6 +235,7 @@ print(os.listdir())
 os.mkdir('new_directiry')
 print(os.listdir())
  """
+
 """ import mod.utils as mu
 import os
 

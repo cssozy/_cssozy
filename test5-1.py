@@ -77,9 +77,9 @@ print(sys.version)
 print(sys.argv)
  """
  
-""" #5-1 데이터 구조- 알고리즘
+#5-1 데이터 구조- 알고리즘
 #스택에 값 넣기
-list = []
+""" list = []
 list.append (1)
 list.append (2)
 list.append (3)
@@ -95,9 +95,9 @@ print(len(list)) """
 
 #큐 선입선출
 #빈 큐 생성
-queue = []
+""" queue = [] 
 
-""" #큐에 값 넣기
+#큐에 값 넣기
 queue.append(1)
 queue.append(2)
 queue.append(3)
@@ -111,10 +111,9 @@ print(queue) # [1,2,3]
 front = queue.pop(0)
 print(front) #1
 print(queue)
-print(len(queue))
+print(len(queue)) """
 
-# enqueue / dequeue
-
+""" # enqueue / dequeue
 qlist = []
 
 def enqueue(qlist, data):
@@ -127,20 +126,17 @@ def dequeue(qlist):
 
 enqueue(qlist,1)
 print(qlist)
-
 enqueue(qlist,2)
-print(qlist)
-
+print(qlist) 
 enqueue(qlist,3)
-print(qlist)
-
+print(qlist) 
 dequeue(qlist)
 print(qlist)
-
 dequeue(qlist)
-print(qlist)
+print(qlist) 
  """
-""" #O(1)
+
+#O(1)
 arr = [1 ,2, 3, 4, 5] 
 
 def ret_01(idx):
@@ -158,7 +154,7 @@ def ret_01(idx):
 start = time.time()
 print(ret_01(2))
 end = time.time()
-print(f"{end - start : 5f} sec") """
+print(f"{end - start : 5f} sec") 
 
 # O(n)
 """ import time
@@ -286,11 +282,32 @@ print(i)
  """
 
 #pandas
-import pandas as pd
+""" import pandas as pd
 
 data = {'Name': ['John', 'Jane', 'Mike', 'Sarah'],
         'Age': [25, 30, 35, 40],
         'City': ['New York', 'Los Angeles', 'Chicago', 'Houston']}
 df = pd.DataFrame(data)
 print(df['Age'].describe())
+print(df.sort_values(by= 'Age', ascending=False))
+print("===============")
+print(df.sort_valuse(by='Age',ascemding=True))
+print("===============")
+print(df.sort_values(by='Name', ascending=True))
+ """
 
+""" #matplotlib
+
+import matplotlib.pyplot as plt
+
+x = [1, 2, 3, 4, 5]
+y = [10, 8, 6, 4, 2]
+
+plt.plot(x, y)
+
+plt.xlabel('time')
+plt.ylabel('n')
+plt.title('Epython')
+
+plt.show()
+ """

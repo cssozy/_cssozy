@@ -14,14 +14,14 @@
     print(spaces + stars)
      """
 #04 다이아몬드 -> range를 1-6까지 정의를 하고 역순으로 한번 더 하기
-""" for i in range(1,6):
+for i in range(1,6):
     spaces = " " * (6 - i) #앞에 있는 공백
     stars = "*" * (2 * i -1)
     print(spaces + stars) #// 이등변삼각형
 for i in range(6, 0 ,-1):
     spaces = " " * (6 - i)
     stars = "*" * (2 * i -1)
-    print(spaces + stars) """
+    print(spaces + stars) 
     
 #5x5 출력
 #01 - 정상출력
@@ -65,7 +65,7 @@ def determine_winner(user_choice):
     if user_choice == pcnum :
         print('무승부')
         return
-    elif ("""  """
+    elif (""
         (user_choice == '1' and pcnum == '3') or
         (user_choice == '2' and pcnum == '1') or
         (user_choice == '3' and pcnum == '2')
@@ -84,7 +84,7 @@ chnum = input()
 #pcnum = get_computer_choice()
     
 determine_winner(chnum)
-     """
+      """
 
 #파일처리
 #파일생성
@@ -96,10 +96,10 @@ file.close()
 file = open("temp.txt", "a")
 file.close()
 file = open("temp.txt", "r+")
-file.close()
- """
+file.close() """
+
 #파일쓰기
-""" file = open("temp.txt", "w")
+"""file = open("temp.txt", "w")
 
 file.write("hello")
 file.write("world")
@@ -156,8 +156,9 @@ for l in line :
 
 f.close() """
 #file object
-f = open("temp.txt", "r")
+""" f = open("temp.txt", "r")
 for line in f : 
     print(line)
     
-f.close()
+f.close() """
+
