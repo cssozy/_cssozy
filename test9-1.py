@@ -181,31 +181,32 @@ end = time.time()
 print("multi end", end - start) """
 
 #병렬처리
-""" import multiprocessing as mp
+import multiprocessing as mp
 import time
 
 def counter(str_name):
     for i in range(5000):
         (f"Countdown {i}, name : {str_name}\n")
-        
-process1 = mp.Process(target=counter, args=("1num",))
-process2 = mp.Process(target=counter, args=("2num",))
-process3 = mp.Process(target=counter, args=("3num",))
 
-start = time.time()
-process1.start()
-process2.start()
-process3.start()
+if __name__ == "__main__":        
+  process1 = mp.Process(target=counter, args=("1num",))
+  process2 = mp.Process(target=counter, args=("2num",))
+  process3 = mp.Process(target=counter, args=("3num",))
 
-process1.join()
-process2.join()
-process3.join()
-end = time.time()
+  start = time.time()
+  process1.start()
+  process2.start()
+  process3.start()
 
-print("proc-end", end-start) """
+  process1.join()
+  process2.join()
+  process3.join()
+  end = time.time()
+
+  print("proc-end", end-start) 
 
 #main 실행
-def main() :
+""" def main() :
     print("hello world")
 
 def run() :
@@ -213,4 +214,4 @@ def run() :
 
 if __name__ == "__main__":
     run()
-    #main()
+    #main() """
