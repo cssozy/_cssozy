@@ -121,7 +121,7 @@ print(temp.name() + "\n" +
 	temp.color_name()) """
  
  
-from faker import Faker as fk
+""" from faker import Faker as fk
  
 #temp = fk()
 temp = fk("ko-KR")
@@ -140,4 +140,134 @@ with open ("fktemp.csv", "w" , newline ='') as f:
 	        temp.ipv4_private() + "," + 
 	        temp.ipv4_public() + "," + 
 	        temp.catch_phrase() + "," + 
-	        temp.color_name() + "\n")
+	        temp.color_name() + "\n") """
+
+#시스템명력어 사용         
+""" import subprocess as sp
+import pprint
+
+res = sp.run(["cmd", "/c", "dir"], capture_output=True)
+res = sp.run(["cmd", "/c", "dir"], capture_output=False)
+# res = sp.run(["cmd", "/c", "ipoconfig", "/all"], capture_output=False)
+#res = sp.run(["cmd", "/c", "ipoconfig", "/all"], capture_output=True)
+print(res) """
+
+#에러 처리
+""" import traceback as tb
+
+def tester() :
+    return 1/0
+
+def caller() :
+    tester()
+    
+def main() :
+    try :
+        caller()
+               
+    #except ZeroDivisionError:
+	    #print("zde error")
+
+    except ValueError:
+        print("ve error")
+	  
+
+    except Exception as ex :
+        print("ex error", ex)
+
+    else :
+	     print("ok")
+
+    finally :
+	    print("end")
+         """
+        
+#태크 찾기
+""" from bs4 import BeautifulSoup as bs
+import requests as rq
+
+#url = "https://xkcd.com/2852/"
+url = "https://news.daum.net/"
+res = rq.get(url)
+
+#pres = res_html.find("h1")
+pres = res_html.find("h2")
+print(pres)
+print("\n1-----------------------\n")
+print(pres.get_text().strip())
+print("\n2-----------------------\n")
+print(pres.next_elment.get_text().strip())
+print("\n6-----------------------\n")
+print(pres.get_text())
+
+tres = res_html.find("title")
+print(tres)
+print("\n3-----------------------\n")
+print(tres.next_element)
+print("\n4-----------------------\n")
+print(tres.get_text().strip())
+
+fares = res_html.findAll("h1")
+for i in fares:
+    print(i.get_text())
+    
+#print(fares)
+print("\n5-----------------------\n")
+
+clres = res_html.findAll(class_ = "doc-title")
+print(clres)
+
+print("\n6-----------------------\n")
+clrs = res_html.find(class_ = "head_top")
+print(clrs)
+print(clrs.get_text()) """
+
+# 셀렉터로 찾기
+""" from bs4 import BeautifulSoup as bs
+import requests as rq
+
+#url = "https://entertain.daum.net/news"
+#url = "https://news.daum.net/"
+url = "https://table.cafe.daum.net/"
+res = rq.get(url)
+
+hmltxt = res.text
+res_html = bs(hmltxt, 'html.parser')
+item = res_html.select_one("#content_table > div.table_group > div:nth-child(3) > div.item_detail > a > strong")
+#print(item)
+print(item.get_text())
+
+wt = res_html.select_one("#content_table > div.table_group > div:nth-child(3) > div.item_detail > a > div > span.txt_name")
+#print(wt)
+print(wt.get_text())
+
+goods = res_html.select_one("#content_table > div.table_group > div:nth-child(3) > div.item_reply > div > button > strong")
+#print(goods)
+print(goods.get_text())
+ """
+#select
+""" from bs4 import BeautifulSoup as bs
+import requests as rq
+
+url = "https://news.daum.net/"
+res = rq.get(url)
+
+hmltxt = res.text
+res_html = bs(hmltxt, 'html.parser')
+
+iss = res_html.select("a.wrap_thumb")
+#print(iss)
+print("\n----------------------\n")
+
+for i in iss :
+    issue = i.get_text()
+    print(issue)
+
+print("\n----------------------\n")
+ct = res_html.select("a.wrap_thumb")
+for j in ct:
+    c = j.attrs["data-tiara-custom"]
+    print(c + "\n") """
+    
+  
+  
